@@ -1,0 +1,37 @@
+.container {
+  margin: 0 auto 20px auto;
+  min-width: 320px;
+  max-width: 1200px;
+  padding: 20px 0;
+  background-color: #d3d3d3;
+  text-align: -webkit-center;
+}
+.table {
+  border-collapse: collapse;
+  border: solid 1px black;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+}
+.tableHeader {
+  border: solid 1px black;
+  background-color: aqua;
+  padding: 10px 0;
+  border-bottom: 3px solid black;
+}
+.tableData {
+  padding: 10px 0;
+  border: solid 1px black;
+}
+.invoice {
+  background-color: limegreen;
+}
+.withdrawal {
+  background-color: orange;
+}
+.payment {
+  background-color: orangered;
+}
+.deposit {
+  background-color: lightblue;
+}

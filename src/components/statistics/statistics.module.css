@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
+  padding: 20px 0;
+  background-color: #d3d3d3;
+  text-align: -webkit-center;
+}
+.statistics {
+  background-color: grey;
+  width: 320px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+}
+.heading {
+  padding: 15px 0 15px 0;
+}
+.box {
+  width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 5px;
+}
+.box:nth-child(1) {
+  background-color: limegreen;
+}
+.box:nth-child(2) {
+  background-color: yellow;
+}
+.box:nth-child(3) {
+  background-color: orangered;
+}
+.box:nth-child(4) {
+  background-color: violet;
+}
+.box:nth-child(5) {
+  background-color: blueviolet;
+}
+.list {
+  list-style: none;
+  display: flex;
+}

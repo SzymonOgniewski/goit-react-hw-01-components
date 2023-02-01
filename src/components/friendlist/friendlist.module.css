@@ -1,9 +1,8 @@
 .container {
-  margin: 20px auto 0 auto;
+  margin: 0 auto 0 auto;
   min-width: 320px;
   max-width: 1200px;
   padding: 20px 0;
-  box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
   background-color: #d3d3d3;
   text-align: -webkit-center;
 }
@@ -11,7 +10,6 @@
   list-style: none;
   padding-inline-start: 0;
   width: 320px;
-  background-color: gainsboro;
   box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
   border-radius: 10px;
 }
@@ -20,9 +18,16 @@
   display: flex;
   padding: 20px 20px 20px 20px;
   gap: 20px;
+  background-color: gainsboro;
+}
+.box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 5px;
 }
 .box:not(:last-child) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 .isOn {

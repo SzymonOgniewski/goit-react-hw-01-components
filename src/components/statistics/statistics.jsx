@@ -1,20 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import css from './statistics.module.css';
 export const Statistics = ({ title, stats }) => {
   const ulContent = stats.map(el => (
-    <li key={el.id}>
+    <li key={el.id} className={css.box}>
       <span> {el.label}</span>
       <span>{el.percentage}%</span>
     </li>
   ));
 
   return (
-    <section>
-      {title && <h2>Upload stats</h2>}
+    <div className={css.container}>
+      <div className={css.statistics}>
+        {title && <h2 className={css.heading}>Upload stats</h2>}
 
-      <ul>{ulContent}</ul>
-    </section>
+        <ul className={css.list}>{ulContent}</ul>
+      </div>
+    </div>
   );
 };
 
